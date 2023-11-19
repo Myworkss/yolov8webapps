@@ -234,7 +234,7 @@ function opencvReady(){
             }
             setTimeout(async function(){
                 try{
-                    model = await tf.loadGraphModel("../yolov8n_web_model/model.json");
+                    model = await tf.loadGraphModel("yolov8n_web_model/model.json");
                 }
                 catch(error){
                     console.log("Error loading YOLOv8 tf.js model")
